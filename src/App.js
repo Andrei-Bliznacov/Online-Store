@@ -9,6 +9,7 @@ import Navigation from "./components/header/Navigation";
 import Product from "./components/product/Product";
 import Eror from "./pages/404";
 import About from "./pages/About";
+import { Basket } from "./pages/Basket";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path ="/contact" element={<Contact/>}/>
           <Route path ="*" element={<Eror/>} />
           <Route path="/product/:category" element={<Product/>} />
+          <Route path="/basket" element={<Basket/>}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

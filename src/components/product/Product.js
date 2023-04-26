@@ -19,7 +19,7 @@ function Product() {
   }, [])
 
   const { category } = useParams()
-  console.log(product);
+  // console.log(product);
   const res = product.filter((e) => e.category == category).map((e, i) => {
     return <ProductTeamplate desc={e.description} img={e.image} price={e.price} title={e.title} key={i} />
   })

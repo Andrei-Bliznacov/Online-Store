@@ -15,7 +15,7 @@ function Contact() {
   const { register, handleSubmit, formState: { errors },reset } = useForm();
   const sendData = (data) => {
     if (data.passwordSec !== data.password) {
-      setInput("Incorect Password")
+      setInput("Incorrect Password")
       return false
     }
     reset()
@@ -40,10 +40,10 @@ function Contact() {
         )}
         {errors.password && <span className="req">{errors.password.message}</span>}
         </div>
-        <input className="inpPassTwo"  placeholder="Repite Password" type="password" {...register("passwordSec", { required: "* Repite Password", maxLength: { value: 10, message: "Too much simbols" } })} />
-        {errors.passwordSec && <span className="inpPassTwo">{errors.passwordSec.message}</span>}
-        <p>{input}</p>
-        <input placeholder="Mail" type='text' {...register("mail", {
+        <input className="inpPassTwo"  placeholder="Repeat Password" type="password" {...register("passwordSec", { required: "* Repeat Password", maxLength: { value: 10, message: "Too much symbols" } })} />
+        {errors.passwordSec && <span className="req">{errors.passwordSec.message}</span>}
+        <span className="req" >{input}</span>
+        <input className="mailInp" placeholder="Mail" type='text' {...register("mail", {
           required: "* Enter your email", pattern: {
             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
             message: "* invalid email address"
