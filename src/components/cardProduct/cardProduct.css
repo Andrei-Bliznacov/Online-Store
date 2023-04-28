@@ -1,0 +1,18 @@
+.categoryBlock{
+    display: flex;
+    flex-direction: column;
+}
+
+.categoryBlock a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: cursive ;
+    text-transform: capitalize ;
+}
+
+.categoryBlock img{
+    width: 300px;
+    height: auto;
+  
+}

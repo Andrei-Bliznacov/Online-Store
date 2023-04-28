@@ -1,0 +1,33 @@
+.navBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8d1e0;
+    height: 100px;
+    /* position: fixed; */
+    width: 100%;
+}
+
+.navBlock a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+} 
+.navBlock a:last-child{
+    margin-right: 85px;
+}
+
+.loogo {
+    width: 100px;
+    height: auto;
+    background-color: #c8d1e0;
+    margin-left: 30px;
+}
+
+.iconHeader svg{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  margin-bottom: 7px;
+}

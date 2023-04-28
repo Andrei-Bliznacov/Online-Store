@@ -1,8 +1,6 @@
-
-
-import React, { useEffect, useState } from 'react'
-import { phones } from '../api/Api'
-import CardProduct from '../components/cardProduct/CardProduct'
+import './home.css';
+import React, { useEffect, useState } from 'react';
+import CardProduct from '../components/cardProduct/CardProduct';
 import axios from 'axios';
 
 const urlProduct = 'https://fakestoreapi.com/products/categories';
@@ -24,7 +22,7 @@ function Home() {
     
   })
   return (
-    <div>
+    <div className='cardsBlock'>
       {dataCategoris}
     </div>
   )

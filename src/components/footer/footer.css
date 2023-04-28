@@ -1,0 +1,15 @@
+.footerBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c8d1e0;
+    margin-top: 20px;
+}
+
+.footerBlock svg{
+    width: 30px;
+    height:30px ;
+    color: #21262e;
+    margin-left:15px ;
+}

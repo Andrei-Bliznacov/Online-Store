@@ -1,9 +1,8 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { phones } from '../../api/Api';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import ProductTeamplate from './ProductTeamplate';
-import './product.css'
+import './product.css';
 
 const urlProducts = "https://fakestoreapi.com/products"
 
