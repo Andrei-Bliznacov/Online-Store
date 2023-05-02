@@ -1,5 +1,7 @@
-import React from 'react'
-import "./productTeamplate.css"
+import React from 'react';
+import "./productTeamplate.css";
+import {androidCart} from 'react-icons-kit/ionicons/androidCart';
+import  { Icon } from 'react-icons-kit';
 
 
 
@@ -22,9 +24,9 @@ function ProductTeamplate({ desc, img, price, title }) {
     <div className='blockProduct'>
       <h2>{title}</h2>
       <img src={img} />
-      <h3>{price}$</h3>
       <p>{desc}</p>
-      <button onClick={sendProduct}>Add to Basket</button>
+      <h3>${price}</h3>
+      <button className='btn' onClick={sendProduct}> <Icon icon={androidCart}/><span>Add to Basket</span></button>
     </div>
   )
 }

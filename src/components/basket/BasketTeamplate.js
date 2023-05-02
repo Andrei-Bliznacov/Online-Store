@@ -1,29 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import "./basket.css";
+import { androidDelete } from 'react-icons-kit/ionicons/androidDelete';
+import { Icon } from 'react-icons-kit';
 
 export const BasketTeamplate = ({ title, image, price, id }) => {
     const [data, setData] = useState(JSON.parse(localStorage.getItem('products')));
-    
+
 
     function saveBasket() {
-        setData((data) =>{
+        window.location.reload(false)
+        setData((data) => {
             return data.filter(storedProducts => storedProducts.title !== title)
-        }) 
-        //  JSON.parse(localStorage.getItem('products'))
-        // .filter(storedProducts => storedProducts.title !== title)
-        console.log(id);
+        })
     }
-    console.log(data);
+
     localStorage.setItem("products", JSON.stringify(data))
-    // function removeProduct() {
-    //     saveBasket()
-       
-    // }
+
     return (
         <>
-            <h2>{title}</h2>
-            <img src={image} />
-            <p>{price}$</p>
-            <button onClick={() => saveBasket(id)}>Remove </button>
+            <div>
+                <h2>{title}</h2>
+                <img src={image} />
+                <p>{price}$</p>
+                <button className='btnBasket' onClick={() => saveBasket(id)}><Icon icon={androidDelete} />Remove </button>
+            </div>
         </>
     )
 }

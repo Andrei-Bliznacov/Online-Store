@@ -1,6 +1,7 @@
-import React from 'react'
-import { BasketTeamplate } from '../components/basket/BasketTeamplate'
-localStorage.clear()
+import React from 'react';
+import { BasketTeamplate } from '../components/basket/BasketTeamplate';
+import "../components/basket/basket.css";
+// localStorage.clear()
 export const Basket = () => {
     function EmptyBasket() {
         return <h1>Basket Empty</h1>
@@ -21,9 +22,9 @@ export const Basket = () => {
     const x = (allPrice == 0) ? <EmptyBasket /> : '';
     return (
         <>
-            <div className='jh'>{basketEnd} {x}</div>
+            <div className='basketBlock'>{basketEnd} {x}</div>
             <div>
-                <p>allPrice {allPrice}$</p>
+                <h3 className='allPrice'>All Price: {allPrice}$</h3>
             </div>
         </>
     )

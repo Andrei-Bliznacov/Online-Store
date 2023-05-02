@@ -16,7 +16,7 @@ function Product() {
       })
 
   }, [])
-
+console.log(product);
   const { category } = useParams()
   // console.log(product);
   const res = product.filter((e) => e.category == category).map((e, i) => {

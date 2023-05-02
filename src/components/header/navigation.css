@@ -4,8 +4,10 @@
     align-items: center;
     background-color: #c8d1e0;
     height: 100px;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .navBlock a {

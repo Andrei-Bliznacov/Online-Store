@@ -1,0 +1,31 @@
+.basketBlock{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(200px , auto);
+  
+}
+
+.basketBlock button{
+    color:#5e040d;
+    background-color: #f5b0b7;
+    appearance: none;
+    border: none;
+    width: 105px;
+    height: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+button.btnBasket:hover {
+    background: #fa192f;
+    transform: translate(0, 0.25em);
+  }
+  button.btnBasket:hover::before {
+    box-shadow: 0 0 0 2px #fa192f, 0 0.5em 0 0 #fa192f;
+    transform: translate3d(0, 0.5em, -1em);
+  }
+
+ 
