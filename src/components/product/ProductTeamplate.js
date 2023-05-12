@@ -13,7 +13,8 @@ function ProductTeamplate({ desc, img, price, title }) {
     const objProduct ={
       title: title,
       image: img,
-      price: price
+      price: price,
+      count: 1
     }
     allProducts.push(objProduct)
     localStorage.setItem('products',JSON.stringify(allProducts))

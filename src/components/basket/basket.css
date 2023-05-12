@@ -6,7 +6,7 @@
   
 }
 
-.basketBlock button{
+.btnBasket{
     color:#5e040d;
     background-color: #f5b0b7;
     appearance: none;
@@ -26,6 +26,17 @@ button.btnBasket:hover {
   button.btnBasket:hover::before {
     box-shadow: 0 0 0 2px #fa192f, 0 0.5em 0 0 #fa192f;
     transform: translate3d(0, 0.5em, -1em);
+  }
+
+  .countButton{
+    border: none;
+    width: 45px;
+    height: 20px;
+  }
+
+  .count{
+    display: flex;
+    flex-direction: row;
   }
 
  

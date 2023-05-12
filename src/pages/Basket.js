@@ -1,6 +1,7 @@
 import React from 'react';
 import { BasketTeamplate } from '../components/basket/BasketTeamplate';
 import "../components/basket/basket.css";
+import { defaultMethod } from 'react-router-dom/dist/dom';
 // localStorage.clear()
 export const Basket = () => {
     function EmptyBasket() {
@@ -9,7 +10,7 @@ export const Basket = () => {
 
     const trasformObj = JSON.parse(localStorage.getItem('products'));
     const basketEnd = trasformObj ? trasformObj.map((e, i) => {
-        return <BasketTeamplate key={i} title={e.title} image={e.image} price={e.price} />
+        return <BasketTeamplate key={i} title={e.title} image={e.image} price={e.price} id={e.id}/>
     }) : <EmptyBasket />;
 
     let allPrice
@@ -29,3 +30,4 @@ export const Basket = () => {
         </>
     )
 }
+export default Basket
